@@ -1,8 +1,9 @@
 import { dictionary } from './utils'
 
 /**
- * @param entryText
- * @returns {string}
+ * Vaporize a string.
+ * @param entryText The input text.
+ * @returns {string} The vaporized string.
  */
 export function vaporize(entryText) {
 	let vaporCoeff = 'Ａ'.charCodeAt(0) - 'A'.charCodeAt(0);
@@ -21,8 +22,9 @@ export function vaporize(entryText) {
 }
 
 /**
- * @param numParagraphs
- * @returns {string}
+ * Generate a vaporized dummy text
+ * @param numParagraphs The number of paragraphs.
+ * @returns {string} The vaporized string.
  */
 export function vaporipsum(numParagraphs = 1) {
 	let paragraph;
